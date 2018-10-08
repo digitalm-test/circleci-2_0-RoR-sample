@@ -22,7 +22,7 @@ jobs:
           RAILS_ENV: test
       - image: circleci/postgres:9.5-alpine
         environment:
-          POSTGRES_USER: ''
+          POSTGRES_USER: root
           POSTGRES_DB: ''
           POSTGRES_PASSWORD: ''
 
