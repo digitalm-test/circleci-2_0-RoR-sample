@@ -67,8 +67,6 @@ jobs:
       # Database setup
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load --trace
-        environment:
-          DATABASE_URL: "postgres://root@localhost:5432/circle_test"
 
       # run tests!
       - run:
