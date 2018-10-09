@@ -20,10 +20,12 @@ jobs:
           RAILS_ENV: test
           RACK_ENV: test
           RAILS_ENV: test
+          PG_HOST: localhost
+          PG_USER: test
       - image: circleci/postgres:9.5-alpine
         environment:
-          PG_HOST: localhost
-          PG_USER: root
+          POSTGRES_USER: test
+          POSTGRES_DB: sample_test
           POSTGRES_PASSWORD: ''
 
       # Specify service dependencies here if necessary
