@@ -22,7 +22,9 @@ development:
 test:
   <<: *default
   host: localhost
-  database: circle_test
+  database: sample_test
+  username: <%= ENV['DATABASE_USERNAME'] || 'root' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || '' %>
 
 staging:
   <<: *default
